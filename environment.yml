@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7
-  #
+  - cdsapi
   - ipython
   #
   - dask-core
@@ -21,3 +21,4 @@ dependencies:
   - pip
   - pip:
     - https://github.com/joshloyal/sliced/archive/243bde2.zip
+    - cdsapi

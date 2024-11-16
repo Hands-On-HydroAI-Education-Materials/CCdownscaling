@@ -1,8 +1,28 @@
 # Hands on Downscaling of Climate Change Scenarios using MyBinder
 
-This repository is a modification of https://github.com/drewpolasky/CCdownscaling repository for educational purposes.
+**This repository is a modification of https://github.com/drewpolasky/CCdownscaling repository for educational purposes.**
 
-For application of downscaling of climate change scenarios, two jupyter notebooks were created.
+Description of Two Jupyter Notebooks
+------------------------------------
+**For application of downscaling of climate change scenarios, two jupyter notebooks were created.**
+
+1. **The first jupyter notebook (1_Downloading_GCM_Data_from_Climate_Data_Store.ipynb)** demonstrated how to download GCM data from CDS(Climate Data Store) https://cds.climate.copernicus.eu/datasets.
+- In this example, GCM(CIMP-6) data of EC-Earth3-CC(Europe) was downloaded for data preparation.
+
+2. **The second jupyter notebook (2_Application_of _Downscaling_Methods_using_Machine_Learning.ipynb)** demonstrated how to apply Machine Leanring approaches for downscaling.
+- In this exampe, (1) Random Forest, (2) Two Part Random Forest, (3) Quantile Mapping approaches were applied for downscaling.
+
+Execution of Two Jupyter Notebooks
+------------------------------------
+**To start Jupyter notebook, please click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Hands-On-HydroAI-Education-Materials/CCdownscaling.git/HEAD)**
+
+1. After clicking **"lauch binder"**, please wait for this web browser to change to **Jupyterlab**.
+
+2. Then, first open **1_Downloading_GCM_Data_from_Climate_Data_Store.ipynb** and execute each cell step by step to download GCM data
+   
+3. second open **2_Application_of _Downscaling_Methods_using_Machine_Learning.ipynb** and execute each cell step by step to apply statistical downscaling methods using machine learning.
+
+>
 
     .
     ├── ...
@@ -17,47 +37,8 @@ For application of downscaling of climate change scenarios, two jupyter notebook
     │   └── 2_Application_of _Downscaling_Methods_using_Machine_Learning.ipynb     # Apply Machine Learning for Downscaling
     └── ...
 
+>
 
-
-
-
-
-This package provides implementation of several statistical climate downscaling techniques, as well as evaluation tools for downscaling outputs. 
-
-## Requirements
-
-See [`environment.yml`](./environment.yml). Tensorflow is pinned in this conda environment in the interest of reproducibility.
-
-## Installation 
-
-With conda:
-```bash
-git clone https://github.com/drewpolasky/CCdownscaling
-cd CCdownscaling
-conda env create -f environment.yml -n ccdown_env
-conda activate ccdown_env 
-export PYTHONPATH=$PWD:$PYTHONPATH
-```
-## Usage
-
-An example use case for downscaling precipitation at Chicago O'Hare airport can be found in the example folder.
-This example requires some example data, which can be downloaded from: https://zenodo.org/records/7817799
-
-Once that data is in place, the example can be run with: 
-```bash
-cd example
-python ohare_example.py
-```
-And runs through several downscaling methods, including SOM, random forest, and quantile mapping. 
-All these methods are then compared on PDF skill score, KS test, RMSE, bias, and autocorrelation, 
-along with the undownscaled values from the NCEP reanalysis.
-
-There are several command line settings that can be adjusted: target variable (max_temp or precip), stationID, 
-and split_type (simple, percentile, seasonal):
-```bash
-python ohare_example.py
-```
-There is also a jupyter notebook with the same example included in the example folder. 
 
 ## Citation
 
@@ -67,8 +48,7 @@ Andrew D. Polasky, Jenni L. Evans, Jose D. Fuentes,
 CCdownscaling: A Python package for multivariable statistical climate model downscaling,
 Environmental Modelling & Software,
 Volume 165,
-2023,
+2023,    
 105712,
 ISSN 1364-8152,
 https://doi.org/10.1016/j.envsoft.2023.105712.
-

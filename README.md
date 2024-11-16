@@ -1,4 +1,26 @@
-# CCdownscaling
+# Hands on Downscaling of Climate Change Scenarios using MyBinder
+
+This repository is a modification of https://github.com/drewpolasky/CCdownscaling repository for educational purposes.
+
+For application of downscaling of climate change scenarios, two jupyter notebooks were created.
+
+    .
+    ├── ...
+    ├── iwssm_examples         # this folder is an example for Educational Program
+    │   ├── data               # store gcm and observation data
+    │   │   ├──cds             # gcm data folder
+    │   │   │  ├── historical  # historical data of gcm
+    │   │   │  ├── projection  # future projection data of gcm
+    │   │   ├──obs             # observation data 
+    │   ├── fig                # figures used to explain the process in jupyter notebooks
+    │   ├── 1_Downloading_GCM_Data_from_Climate_Data_Store.ipynb                   # Download GCM from CDS using API
+    │   └── 2_Application_of _Downscaling_Methods_using_Machine_Learning.ipynb     # Apply Machine Learning for Downscaling
+    └── ...
+
+
+
+
+
 
 This package provides implementation of several statistical climate downscaling techniques, as well as evaluation tools for downscaling outputs. 
 
